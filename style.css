@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/*
+  Global styles, resets, ect
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.4em;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #555;
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #dcdcdc;
+  padding: 50px;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+/*
+  Navigation styles
+*/
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo {
+  width: 20%;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.menu-link:hover {
+  color: #000;
+  border-bottom: 2px solid #71C2FF;
+  transition: all 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .menu-list {
+    flex-direction: column;
+  }
+}
+
+/*
+  Hero Section
+*/
+
+.background-image, .overlay {
+  height: 70vh;
+  width: 100vw;
+}
+
+.background-image {
+  background: url('assets/mac-desk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.overlay {
+  background-color: #414a4c;
+  opacity: 0.7;
+}
+
+.page-title {
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  transform: translateY(50%);
+  flex-direction: column;
+}
+
+.page-title h1 {
+  font-size: 2em;
+}
+
+.page-title p {
+  font-size: 1.2em;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 500px) {
+  .page-title h1 {
+    font-size: 1.5em;
+  }
+}
+
+/*
+  About Us Section
+*/
+
+.about-body-image {
+  background: url('assets/team.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.about-body-info {
+  padding: 2em 4em;
+}
+
+/*
+  Services Section
+*/
+
+.services-container {
+  width: 100vw;
+}
+
+.services-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 30px;
+  background: #fff;
+  padding: 20px;
+  max-width: 600px;
+  -webkit-box-shadow: 10px 26px 28px -16px rgba(0,0,0,0.41);
+  -moz-box-shadow: 10px 26px 28px -16px rgba(0,0,0,0.41);
+  box-shadow: 10px 26px 28px -16px rgba(0,0,0,0.41);
+}
+
+.card-header {
+  background: #262626;
+  color: #f5f5f5;
+  padding: 10px 10px 30px 10px;
+  margin: -20px -20px 15px -20px;
+  height: 100%;
+}
+
+/*
+  Contact form styling
+*/
