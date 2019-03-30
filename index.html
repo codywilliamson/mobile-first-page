@@ -73,7 +73,7 @@
               <h3>Plan</h3>
             </div>
               <div class="card-info">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima, iusto deserunt tenetur error accusantium quas soluta ratione laborum sequi quidem recusandae, nostrum, placeat omnis a ipsam, ab dolores consequatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima, iusto deserunt tenetur error accusantium quas soluta ratione laborum sequi sd quidem recusandae, nostrum, placeat omnis a ipsam, ab dolores consequatur.</p>
               </div>
           </div>
 
@@ -120,14 +120,17 @@
   <section id="contact">
     <div class="contact-container">
       <div class="content-wrapper">
-        <div class="header"></div>
+        <div class="header">
+          <h2>Contact</h2>
+          <p>Fill out the form below so we can get in touch.</p>
+        </div>
         <div class="contact-form">
-          <form class="form" action="" method="post">
+          <form class="form" action="handler.php" method="post">
             <input type="text" name="name" placeholder="First & Last Name" required>
             <input type="email" name="email" placeholder="Your email address" required>
             <input type="url" name="website" placeholder="Your website, if applicable">
-            <textarea name="comments" rows="8" cols="30" placeholder="A brief description of what you need"></textarea>
-            <button type="button" name="submit">Submit</button>
+            <textarea name="comments" rows="8" cols="50" placeholder="A brief description of what you need"></textarea>
+            <input type="submit" class="button" name="submit"></input>
           </form>
         </div>
       </div>
