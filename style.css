@@ -217,6 +217,12 @@ input[type="url"]::placeholder, textarea::placeholder {
   color: #262626;
   font-size: 1.8em;
 }
+@media (max-width: 768px) {
+input[type="text"]::placeholder, input[type="email"]::placeholder,
+input[type="url"]::placeholder, textarea::placeholder {
+  font-size: 1.4em;
+}
+}
 
 input[type="text"], input[type="email"],
 input[type="url"] {
